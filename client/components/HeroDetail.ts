@@ -1,4 +1,7 @@
-<template>
+import Vue from 'vue';
+
+export default Vue.extend({
+  template: `
   <div class="editarea">
     <div>
       <div class="editfields">
@@ -20,10 +23,7 @@
       <button @click="save">Save</button>
     </div>
   </div>
-</template>
-
-<script>
-export default {
+  `,
   props: {
     hero: { type: Object }
   },
@@ -73,22 +73,21 @@ export default {
       this.emitRefresh('update');
     }
   }
-};
-</script>
+});
 
-<style lang="scss" scoped>
-.editarea {
-  float: left;
-  input {
-    margin: 4px;
-    height: 20px;
-    color: rgb(0, 120, 215);
-  }
-  button {
-    margin: 8px;
-  }
-  .editfields {
-    margin-left: 12px;
-  }
-}
-</style>
+// <style lang="scss" scoped>
+// .editarea {
+//   float: left;
+//   input {
+//     margin: 4px;
+//     height: 20px;
+//     color: rgb(0, 120, 215);
+//   }
+//   button {
+//     margin: 8px;
+//   }
+//   .editfields {
+//     margin-left: 12px;
+//   }
+// }
+// </style>
