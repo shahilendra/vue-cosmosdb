@@ -6,6 +6,8 @@
       "noImplicitReturns": true,
       "noImplicitAny": false,
       "module": "es2015",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
       "moduleResolution": "node",
       "target": "es5"
   },
