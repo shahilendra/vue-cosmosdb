@@ -49,7 +49,7 @@ export default {
     },
 
     deleteHero(hero) {
-      return heroService.delete(hero).then(() => {
+      return heroService.deleteHero(hero).then(() => {
         this.heroes = this.heroes.filter(h => h !== hero);
         if (this.selectedHero === hero) {
           this.selectedHero = null;
