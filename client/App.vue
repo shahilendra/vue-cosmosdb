@@ -18,7 +18,12 @@ import HeroList from './components/HeroList.vue';
   }
 })
 export default class App extends Vue {
-  title: 'My Vue and CosmosDB Heroes App';
+  title: string;
+
+  constructor() {
+    super();
+    this.title = 'My Vue and CosmosDB Heroes App';
+  }
 }
 </script>
 
